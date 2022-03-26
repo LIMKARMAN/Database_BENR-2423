@@ -1,5 +1,8 @@
-const bcrypt = require("bcryptjs")
+const { MongoClient, ServerApiVersion, Admin} = require('mongodb');
+const uri = "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.jx2e8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
+const bcrypt = require("bcryptjs")
 const password = "mypass123"
 const saltRounds = 10
 
@@ -18,10 +21,6 @@ bcrypt.genSalt(saltRounds,function(saltError,salt){
     }
     // console.log(password)
 })
-
-const { MongoClient, ServerApiVersion, Admin} = require('mongodb');
-const uri = "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.jx2e8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 client.connect(err => {
     if (err) {
