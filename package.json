@@ -7,9 +7,22 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "mongo": "^0.1.0",
-    "mongodb": "^4.4.1"
-  }
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.8"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LIMKARMAN/Database_BENR-2423.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LIMKARMAN/Database_BENR-2423/issues"
+  },
+  "homepage": "https://github.com/LIMKARMAN/Database_BENR-2423#readme",
+  "description": ""
 }
