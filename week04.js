@@ -98,13 +98,13 @@ client.connect(async err => {
     //     { "$addToSet": { comments: "hurray"}}
     // )
 
-    let result2 = await client.db('Learning').collection('companies').update(
-        { name: "Google" },
-        { "$pop": { comments: 1}}  // 1, pop from back; -1, pop from front
-    )
+    //let result2 = await client.db('Learning').collection('companies').update(
+    //   { name: "Google" },
+    //    { "$pop": { comments: 1}}  // 1, pop from back; -1, pop from front
+    //)
 
 
-    console.log(result2)
+    //console.log(result2)
 
 })
    
