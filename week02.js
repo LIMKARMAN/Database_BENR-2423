@@ -4,7 +4,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 
 client.connect(err => {
     if (err) {
-        console.log(err.message)
+        console.log(err.message)    //terminal will return an error message when the username or password is incorrect
         return
     }
     console.log('Connected to MongoDB');
