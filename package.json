@@ -1,31 +1,18 @@
 {
-  "name": "hw-github",
-  "version": "1.0.0",
-  "main": "week2.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "mongo": "^0.1.0",
-    "mongodb": "^4.4.1",
-    "mongoose": "^6.2.8",
-    "save-dev": "0.0.1-security"
-  },
-  "devDependencies": {
-    "@faker-js/faker": "^6.0.0",
-    "@shelf/jest-mongodb": "^2.2.1",
-    "jest": "^27.5.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LIMKARMAN/Database_BENR-2423.git"
-  },
-  "bugs": {
-    "url": "https://github.com/LIMKARMAN/Database_BENR-2423/issues"
-  },
-  "homepage": "https://github.com/LIMKARMAN/Database_BENR-2423#readme",
-  "description": ""
+	"scripts": {
+		"start": "node main.js",
+		"test": "jest"
+	},
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"bcryptjs": "^2.4.3",
+		"express": "^4.18.1",
+		"mongodb": "^4.6.0",
+		"swagger-ui-express": "^4.4.0"
+	},
+	"devDependencies": {
+		"@shelf/jest-mongodb": "^2.2.2",
+		"jest": "^28.1.0",
+		"supertest": "^6.2.3"
+	}
 }
